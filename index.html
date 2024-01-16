@@ -1,27 +1,35 @@
-<!-- even more unfinished site because i think i royally screwed something up with the last one -->
+<!-- i'm not a web developer. please ignore my abhorrent html -->
+<!DOCTYPE html>
 <title>bsmntoid website</title>
 <style>
-    #stuff {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-    .text {
-        font-family: serif;
-        text-align: center;
-        font-size: xx-large;
-    }
-    .image {
-        display: block;
-        margin: auto;
-        scale: 2;
-    }
+#body {
+    background-color: lightgray;
+}
+.stuff {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px green;
+    width: 100%;
+}
+.text {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+img {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 125px;
+}
 </style>
-<div id="stuff">
-<h1 class="text"></h1>
-<p class="text">who are you? how did you get in? i'm calling the cops</p>
-<img class="image" src="insanity.gif">
-</div>
+<html>
+    <body id="body">
+        <div class="stuff">
+            <p class="text">you have reached bsmntoid.com. please leave a message after the beep</p>
+            <img src="insanity.gif">
+        </div>
+    </body>
+</html>
