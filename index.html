@@ -1,35 +1,54 @@
 <!-- i'm not a web developer. please ignore my abhorrent html -->
 <!DOCTYPE html>
-<title>bsmntoid website</title>
+<title>bsmntoid</title>
 <style>
-#body {
-    background-color: lightgray;
-}
-.stuff {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 3px green;
-    width: 100%;
-}
-.text {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: xx-large;
-}
-img {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    width: 125px;
-}
+    body {
+        background-color: #000632;
+        overflow: hidden;
+    }
+    #logo {
+        width: 100%;
+        margin: 0;
+    }
+    #title {
+        position: absolute;
+        text-align: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        margin: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        font-size: 17vw;
+        animation-name: title;
+        animation-duration: 5s;
+    }
+    #rings {
+        position: absolute;
+        left:50%;
+        max-width: 1900px;
+        min-width: 300px;
+        width: 100%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        animation-name: rings;
+        animation-duration: 5s;
+    }
+    @keyframes title {
+        0% {top: -50%; opacity: 10%;}
+        100% {top: 50%; opacity: 100%;}
+    }
+    @keyframes rings {
+        0% {top: 150%; opacity: 10%;}
+        100% {top: 50%; opacity: 100%;}
+    }
 </style>
 <html>
-    <body id="body">
-        <div class="stuff">
-            <p class="text">you have reached bsmntoid.com. please leave a message after the beep</p>
-            <img src="insanity.gif">
+    <body>
+        <div id="logo">
+            <img src="3440TRANSPARENT.png" id="rings">
+            <p id="title">bsmntoid</p>
         </div>
     </body>
 </html>
